@@ -27,8 +27,8 @@ PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/armani/kernel:kernel \
-    device/xiaomi/armani/dt.img:dt.img
+    device/xiaomi/dior/kernel:kernel \
+    device/xiaomi/dior/dt.img:dt.img
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dior
