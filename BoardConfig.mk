@@ -37,7 +37,6 @@ BOARD_VENDOR 				:= xiaomi
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE 	:= true
-TARGET_USES_QCOM_BSP := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/xiaomi/dior/kernel
@@ -62,4 +61,6 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 160
+TW_TARGET_USES_QCOM_BSP := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
+AB_OTA_UPDATER := false
