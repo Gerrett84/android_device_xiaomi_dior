@@ -62,4 +62,5 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 160
+TW_TARGET_USES_QCOM_BSP := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
