@@ -26,13 +26,9 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
-PRODUCT_COPY_FILES += \
-    device/xiaomi/armani/kernel:kernel \
-    device/xiaomi/armani/dt.img:dt.img
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dior
 PRODUCT_NAME := omni_dior
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := HM_NOTE_1LTE
+PRODUCT_MODEL := HM NOTE 1LTE
 PRODUCT_MANUFACTURER := Xiaomi
