@@ -42,9 +42,6 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x2000000 --dt device/xiaomi/dior/dt.img
 
-#Sepolicy
-include device/qcom/sepolicy/sepolicy.mk
-
 # Init
 TARGET_NO_INITLOGO := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file

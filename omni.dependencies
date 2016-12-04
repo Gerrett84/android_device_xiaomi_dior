@@ -1,8 +1,0 @@
-[
-  {
-    "remote":"github",
-    "repository": "android_device_qcom_caf-sepolicy",
-    "target_path": "device/qcom/sepolicy",
-    "revision":"android-7.0"
-  }
-]
