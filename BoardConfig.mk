@@ -35,10 +35,6 @@ TARGET_BOOTLOADER_NAME		 := dior
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 BOARD_VENDOR 				:= xiaomi
 
-# QCOM
-BOARD_USES_QCOM_HARDWARE 	:= true
-TARGET_USES_QCOM_BSP := true
-
 # Kernel
 TARGET_PREBUILT_KERNEL := device/xiaomi/dior/kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
