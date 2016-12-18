@@ -20,6 +20,13 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --dt device/xiaomi/dior/dt.i
 # Keymaster
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
+#Sepolicy
+include device/qcom/sepolicy/sepolicy.mk
+
+# Init
+TARGET_NO_INITLOGO := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
