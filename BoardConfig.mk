@@ -11,31 +11,22 @@ TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 TARGET_NO_BOOTLOADER := true
 
-# Kernel
+# Kernel Prebuilt
 TARGET_PREBUILT_KERNEL := device/xiaomi/dior/kernel
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=dior user_debug=31 msm_rtb.filter=0x37
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=dior androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --dt device/xiaomi/dior/dt.img
 
 # Keymaster
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
-#Sepolicy
-include device/qcom/sepolicy/sepolicy.mk
-
-# Init
-TARGET_NO_INITLOGO := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
-
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-TARGET_RECOVERY_QCOM_RTC_FIX := true
-RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_FSTAB := device/xiaomi/dior/twrp.fstab
 
 # TWRP-Specific
-TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS := 160
 TW_THEME := portrait_hdpi
 TW_INCLUDE_CRYPTO := true
+RECOVERY_SDCARD_ON_DATA := true
